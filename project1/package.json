@@ -1,0 +1,37 @@
+{
+  "name": "himesha-countries",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "This is an NPM to fetch you the country details",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "scripts": {
+    "build": "rollup -c --environment NODE_ENV:production",
+    "build:dev": "rollup -c --environment NODE_ENV:development",
+    "dev": "rollup -c -w --environment NODE_ENV:development"
+  },
+  "keywords": [
+    "react",
+    "countries",
+    "hooks",
+    "npm"
+  ],
+  "author": "Himesha Patel",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.0",
+    "@rollup/plugin-node-resolve": "^15.0.0",
+    "@rollup/plugin-terser": "^0.4.4",
+    "rollup": "^4.40.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4"
+  },
+  "peerDependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  }
+}
+
